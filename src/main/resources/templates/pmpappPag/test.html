@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+    <title>推广版test 测试接口</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Custom Theme files -->
+<link href="../css/login.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" src="../js/jquery-1.8.1.min.js"></script> 
+<script type="text/javascript" src="../js/jquery.form.js"></script> 
+  <script type="text/javascript">
+ </script> 
+</head>
+<body>
+
+<h1>登录接口验证</h1>
+<form action="/token/checkLogin" method="post">
+用户名：<input type="text"  name="account" /><br>
+密码:<input type="text" name="password"/><br>
+<input type="submit" value="登录接口验证">
+</form>
+<hr>
+
+<h1>操作密码接口验证</h1>
+<form action="/user/checkOper_pwd" method="post">
+令牌  token:<input type="text" name="token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJBUFAiLCJ1c2VyX2lkIjoiMjgiLCJpc3MiOiJTZXJ2aWNlIiwiZXhwIjoxNTUxMDYzOTIxLCJpYXQiOjE1NTAxOTk5MjF9.4XDn2WBdZtArcC2ezSfrDEwGYi1tq8jD8EMsQGA-pw4" /><br>
+操作密码：<input type="text" name="opassword"/><br>
+<input type="submit" value="操作密码接口验证">
+</form>
+<hr>
+
+
+<h1>运行列表接口</h1>
+<form action="/run/run_list" method="post">
+令牌  token:<input type="text" name="token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJBUFAiLCJ1c2VyX2lkIjoiMjgiLCJpc3MiOiJTZXJ2aWNlIiwiZXhwIjoxNTUxMDYzOTIxLCJpYXQiOjE1NTAxOTk5MjF9.4XDn2WBdZtArcC2ezSfrDEwGYi1tq8jD8EMsQGA-pw4" /><br>
+<input type="submit" value="运行列表接口验证">
+</form>
+<hr>
+<h1>运行详情接口验证</h1>
+<form action="/run/run_detail" method="post">
+令牌  token:<input type="text" name="token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJBUFAiLCJ1c2VyX2lkIjoiMjgiLCJpc3MiOiJTZXJ2aWNlIiwiZXhwIjoxNTUxMDYzOTIxLCJpYXQiOjE1NTAxOTk5MjF9.4XDn2WBdZtArcC2ezSfrDEwGYi1tq8jD8EMsQGA-pw4" /><br>
+交换机名称tg：<input type="text" name="tg" /><br>
+编号number：<input type="text" name="number" /><br>
+<input type="submit" value="运行详情接口验证">
+</form>
+<hr>
+<h1>开关接口验证</h1>
+<form action="/run/set_di" method="post">
+令牌  token:<input type="text" name="token" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJBUFAiLCJ1c2VyX2lkIjoiMjgiLCJpc3MiOiJTZXJ2aWNlIiwiZXhwIjoxNTUxMDYzOTIxLCJpYXQiOjE1NTAxOTk5MjF9.4XDn2WBdZtArcC2ezSfrDEwGYi1tq8jD8EMsQGA-pw4" /><br>
+交换机名称tg：<input type="text" name="tg" /><br>
+编号number：<input type="text" name="number" /><br>
+来源（1列表，2详情）source：<input type="text" name="source"/><br><br>
+<input type="submit" value="开关接口验证">
+</form>
+	
+</body>
+</html>
